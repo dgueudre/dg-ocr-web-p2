@@ -1,14 +1,14 @@
-.header-info {
+.header-info-section {
     display: flex;
     align-items: center;
 }
 
-.header-info i {
+.header-info-section i {
     font-size: small;
     color: var(--color-blue)
 }
 
-.header-info i {
+.header-info-section i {
     --icon-size: 30px;
     display: flex;
     align-items: center;
