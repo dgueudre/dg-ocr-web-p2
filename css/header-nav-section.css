@@ -1,29 +1,29 @@
-.header-navbar {
+.header-nav-section {
     display: flex;
     justify-content: space-between;
 }
 
-.header-navbar ul {
+.header-nav-section ul {
     display: flex;
     flex-direction: row;
     margin: 0;
 }
 
-.header-navbar li {
+.header-nav-section li {
     list-style: none;
     padding: 20px;
     border-top: 3px solid transparent;
 }
 
-.header-navbar li>a {
+.header-nav-section li>a {
     text-decoration: none;
     color: var(--color-black);
 }
 
-.header-navbar li.active {
+.header-nav-section li.active {
     border-top: 3px solid var(--color-blue);
 }
 
-.header-navbar li.active>a {
+.header-nav-section li.active>a {
     color: var(--color-blue)
 }
