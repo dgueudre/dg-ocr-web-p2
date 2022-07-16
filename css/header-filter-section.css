@@ -3,41 +3,48 @@
 }
 
 .header-filter-section,
-.header-filters {
+.header-filter-section ul {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
 .header-filter-section h4 {
     margin: 0;
 }
 
-.header-filters>div {
+.header-filter-section li {
     display: flex;
     margin: 5px;
 }
 
-.header-filters i,
-.header-filters span {
+.header-filter-section ul i,
+.header-filter-section ul span,
+.header-filter-section h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header-filter-section ul i,
+.header-filter-section ul span {
     border: 1px solid var(--color-light-blue);
     border-radius: var(--icon-size);
 }
 
-.header-filters i {
+.header-filter-section ul i {
     width: var(--icon-size);
     height: var(--icon-size);
     background-color: var(--color-light-blue);
     margin-right: calc(0px - var(--icon-size));
 }
 
-.header-filters span {
+.header-filter-section ul span {
     padding: 5px;
     padding-left: calc(5px + var(--icon-size));
 }
 
-.header-filters i {
+.header-filter-section ul i {
     color: var(--color-blue);
 }
