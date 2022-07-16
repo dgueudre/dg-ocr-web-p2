@@ -1,6 +1,7 @@
 .header-search-section {
     --radius: 15px;
     --icon-size: 50px;
+    --max-mobile-width: 480px;
     display: flex;
     height: 50px;
 }
@@ -41,15 +42,15 @@
     display: none;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .header-search-section a>span {
         display: none;
     }
 
-    .header-search-section a > i {
+    .header-search-section a>i {
         display: unset;
     }
-    
+
     .header-search-section .search-button {
         border-radius: var(--radius);
         width: var(--icon-size);
