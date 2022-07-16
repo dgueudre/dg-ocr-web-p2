@@ -1,5 +1,6 @@
 .header-filter-section {
-    --icon-size: 50px
+    --icon-size: 50px;
+    --text-padding: 10px;
 }
 
 .header-filter-section,
@@ -29,8 +30,12 @@
 
 .header-filter-section ul i,
 .header-filter-section ul span {
-    border: 1px solid var(--color-light-blue);
     border-radius: var(--icon-size);
+}
+
+.header-filter-section ul span {
+    z-index: -1;
+    border: 2px solid var(--color-grey);
 }
 
 .header-filter-section ul i {
@@ -41,8 +46,8 @@
 }
 
 .header-filter-section ul span {
-    padding: 5px;
-    padding-left: calc(5px + var(--icon-size));
+    padding: 0 var(--text-padding);
+    padding-left: calc(var(--text-padding) + var(--icon-size));
 }
 
 .header-filter-section ul i {
