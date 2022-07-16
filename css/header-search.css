@@ -6,20 +6,20 @@
     height: 50px;
 }
 
-.search-icon-container,
-.search-button-container {
+.search-form i,
+.search-button {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.search-icon-container {
+.search-form i {
     width: 50px;
     background-color: var(--color-grey);
     border-radius: 20% 0 0 20%;
 }
 
-.search-button-container {
+.search-button {
     background-color: var(--color-blue);
     padding: 10px;
     border-radius: 0 20% 20% 0;
