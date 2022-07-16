@@ -1,5 +1,5 @@
 .header-filter-section {
-    --icon-size: 35px
+    --icon-size: 50px
 }
 
 .header-filter-section,
@@ -17,8 +17,8 @@
     margin: 5px;
 }
 
-.header-filters .icon-container,
-.header-filters .text-container {
+.header-filters i,
+.header-filters span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,14 +26,14 @@
     border-radius: var(--icon-size);
 }
 
-.header-filters .icon-container {
+.header-filters i {
     width: var(--icon-size);
     height: var(--icon-size);
     background-color: var(--color-light-blue);
     margin-right: calc(0px - var(--icon-size));
 }
 
-.header-filters .text-container {
+.header-filters span {
     padding: 5px;
     padding-left: calc(5px + var(--icon-size));
 }
