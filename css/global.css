@@ -11,7 +11,8 @@ html {
 }
 
 body {
-    padding: 0 20px 0 20px;
+    margin: 0;
+    padding: 0 30px;
 }
 
 ul,
@@ -22,4 +23,19 @@ li {
 
 li {
     list-style: none;
+}
+
+.fa-star.on {
+    color: var(--color-blue);
+}
+
+.fa-star.off {
+    color: var(--color-grey);
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+
 }

@@ -1,0 +1,40 @@
+a.card {
+    --radius: 15px;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    border-radius: var(--radius);
+    box-shadow: 0 0 20px grey;
+    padding: 5px;
+}
+
+.card>img {
+    object-fit: cover;
+}
+
+.card>div {
+    padding: 10px;
+}
+
+.card.card-basic {
+    flex-direction: column;
+    width: 300px;
+}
+
+.card.card-basic>img {
+    height: 150px;
+    border-radius: var(--radius) var(--radius) 0 0;
+
+}
+
+.card.card-long {
+    flex-direction: row;
+    width: 350px;
+}
+
+.card.card-long>img {
+    height: 200px;
+    width: 150px;
+    border-radius: var(--radius) 0 0 var(--radius);
+
+}

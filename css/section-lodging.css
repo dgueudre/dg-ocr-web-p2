@@ -1,0 +1,25 @@
+.section-lodging {
+    display: flex;
+}
+
+.section-lodging-city ,
+.section-lodging-most-popular {
+    padding: 20px;
+}
+
+
+.section-lodging-city {
+    background-color: var(--color-grey);
+    max-width: 1000px;
+    border-radius: 15px;
+}
+.section-lodging-city>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.section-lodging-most-popular {
+    background-color: var(--color-grey);
+    border-radius: 15px;
+}

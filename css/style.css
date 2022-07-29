@@ -1,6 +1,8 @@
 /* @import url(reset.css); */
 @import url(global.css);
+@import url(card.css);
 @import url(header-nav-section.css);
 @import url(header-search-section.css);
 @import url(header-filter-section.css);
 @import url(header-info-section.css);
+@import url(section-lodging.css);
