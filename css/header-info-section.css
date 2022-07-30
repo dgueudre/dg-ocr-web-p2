@@ -1,6 +1,7 @@
 .header-info-section {
     display: flex;
     align-items: center;
+    padding: var(--spacing-container);
 }
 
 .header-info-section i {

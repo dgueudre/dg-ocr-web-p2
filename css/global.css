@@ -16,6 +16,7 @@ html {
     --color-blue: #0065FC;
     --color-light-blue: #DEEBFF;
     --color-grey: #F2F2F2;
+    --spacing-container: 0;
 }
 
 /* common */
@@ -59,8 +60,7 @@ a {
 }
 
 @media screen and (max-width: 480px) {
-    body {
-        /* margin: 0; */
+    :root {
+        --spacing-container: 30px;
     }
-
 }

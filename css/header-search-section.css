@@ -4,6 +4,7 @@
     --max-mobile-width: 480px;
     display: flex;
     height: 50px;
+    margin: var(--spacing-container);
 }
 
 .header-search-section i,
