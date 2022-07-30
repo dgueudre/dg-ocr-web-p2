@@ -1,5 +1,6 @@
 a.card {
     --radius: 15px;
+    margin: 20px;
     display: flex;
     text-decoration: none;
     color: inherit;
