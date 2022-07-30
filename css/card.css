@@ -1,4 +1,4 @@
-a.card {
+.card {
     --radius: 15px;
     margin: 0 0 40px 0;
     display: flex;
@@ -23,13 +23,13 @@ a.card {
     border-radius: var(--radius) var(--radius) 0 0;
 }
 
-.card>div {
+.card .card-content {
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.card>div>div {
+.card .card-review {
     margin-top: auto;
 }
 
