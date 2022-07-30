@@ -10,9 +10,20 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
-    margin: 0;
-    padding: 0 30px;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1200px;
 }
 
 ul,
@@ -35,7 +46,7 @@ li {
 
 @media screen and (max-width: 480px) {
     body {
-        padding: 0;
+        /* margin: 0; */
     }
 
 }

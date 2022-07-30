@@ -1,7 +1,8 @@
 a.card {
     --radius: 15px;
-    margin: 20px;
+    margin: 0 0 40px 0;
     display: flex;
+    flex-direction: column;
     text-decoration: none;
     color: inherit;
     border-radius: var(--radius);
@@ -9,33 +10,37 @@ a.card {
     padding: 5px;
 }
 
+.card h4,
+.card p {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
 .card>img {
     object-fit: cover;
+    height: 100px;
+    width: 210px;
+    border-radius: var(--radius) var(--radius) 0 0;
 }
 
 .card>div {
     padding: 10px;
-}
-
-.card.card-basic {
+    display: flex;
     flex-direction: column;
-    width: 300px;
 }
 
-.card.card-basic>img {
-    height: 150px;
-    border-radius: var(--radius) var(--radius) 0 0;
-
+.card>div>div {
+    margin-top: auto;
 }
 
 .card.card-long {
     flex-direction: row;
-    width: 350px;
+    width: 100%;
 }
 
 .card.card-long>img {
-    height: 200px;
-    width: 150px;
+    height: 140px;
+    width: 120px;
     border-radius: var(--radius) 0 0 var(--radius);
 
 }

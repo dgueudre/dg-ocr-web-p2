@@ -1,18 +1,21 @@
 .section-lodging {
+    --width-most-popular: 380px;
     display: flex;
 }
 
-.section-lodging-city ,
+.section-lodging-search-result,
 .section-lodging-most-popular {
-    padding: 20px;
+    padding: 30px;
 }
 
 
-.section-lodging-city {
+.section-lodging-search-result {
     background-color: var(--color-grey);
-    border-radius: 15px;
+    width: calc(1200px - var(--width-most-popular));
+    border-radius: 30px;
 }
-.section-lodging-city>div {
+
+.section-lodging-search-result>div {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -20,6 +23,13 @@
 
 .section-lodging-most-popular {
     background-color: var(--color-grey);
-    border-radius: 15px;
+    width: 380px;
+    border-radius: 30px;
     margin-left: 20px;
+}
+
+.section-lodging-most-popular .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
