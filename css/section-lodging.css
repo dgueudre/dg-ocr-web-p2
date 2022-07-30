@@ -1,4 +1,4 @@
-.section-lodging {
+#section-lodging {
     display: flex;
 }
 
@@ -31,4 +31,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#section-activity>div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
