@@ -1,15 +1,4 @@
-:root {
-    --color-white: white;
-    --color-black: black;
-    --color-blue: #0065FC;
-    --color-light-blue: #DEEBFF;
-    --color-grey: #F2F2F2;
-}
-
-html {
-    font-family: 'Raleway', sans-serif;
-}
-
+/* reset */
 html {
     box-sizing: border-box;
 }
@@ -20,9 +9,29 @@ html {
     box-sizing: inherit;
 }
 
+/* vars */
+:root {
+    --color-white: white;
+    --color-black: black;
+    --color-blue: #0065FC;
+    --color-light-blue: #DEEBFF;
+    --color-grey: #F2F2F2;
+}
+
+/* common */
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
 body {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+}
+
+header,
+main,
+footer .container {
+    margin: 0 auto;
     max-width: 1200px;
 }
 
@@ -34,6 +43,11 @@ li {
 
 li {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .fa-star.on {

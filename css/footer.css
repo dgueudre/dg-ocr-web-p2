@@ -1,0 +1,23 @@
+footer {
+    background-color: var(--color-grey);
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .container>div {
+    width: 33%;
+}
+
+@media screen and (max-width: 480px) {
+    footer .container {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    footer .container>div {
+        width: 100%;
+    }
+}

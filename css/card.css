@@ -3,8 +3,6 @@
     margin: 0 0 40px 0;
     display: flex;
     flex-direction: column;
-    text-decoration: none;
-    color: inherit;
     border-radius: var(--radius);
     box-shadow: 0 0 20px grey;
     padding: 5px;
@@ -49,4 +47,14 @@
 
 .card.card-big>img {
     width: 280px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .card,
+    .card>img,
+    .card.card-big,
+    .card.card-big>img {
+        width: 100%;
+    }
 }

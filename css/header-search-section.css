@@ -24,7 +24,6 @@
     padding: 10px;
     border-radius: 0 var(--radius) var(--radius) 0;
     color: var(--color-white);
-    text-decoration: none;
 }
 
 .header-search-section input {

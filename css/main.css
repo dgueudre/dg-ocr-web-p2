@@ -39,3 +39,29 @@
     align-items: flex-end;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 480px) {
+    #section-lodging {
+        flex-direction: column-reverse;
+    }
+
+    .section-lodging-search-result {
+        background-color: var(--color-white);
+        border-radius: 0px;
+    }
+
+    .section-lodging-most-popular {
+        background-color: var(--color-grey);
+        width: 100%;
+        border-radius: 0px;
+        margin-left: 0px;
+    }
+
+    #section-activity {
+        padding: 30px;
+    }
+
+    #section-activity>div>div {
+        width: 100%;
+    }
+}
