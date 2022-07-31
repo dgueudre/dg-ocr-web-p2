@@ -1,6 +1,8 @@
 .header-filter-section {
     --icon-size: 50px;
     --text-padding: 10px;
+    --span-bg-color: transparent;
+    --span-txt-color: inherit;
     padding: 0 var(--spacing-container);
 }
 
@@ -36,6 +38,8 @@
 .header-filter-section ul span {
     z-index: -1;
     border: 2px solid var(--color-grey);
+    background-color: var(--span-bg-color);
+    color: var(--span-txt-color);
 }
 
 .header-filter-section ul i {
@@ -52,4 +56,13 @@
 
 .header-filter-section ul i {
     color: var(--color-blue);
+}
+
+.header-filter-section a {
+    display: flex;
+}
+
+.header-filter-section ul a:hover {
+    --span-bg-color: var(--color-blue);
+    --span-txt-color: var(--color-white);
 }
