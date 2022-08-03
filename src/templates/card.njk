@@ -1,0 +1,16 @@
+<a class="card" href="#">
+  <img alt="hotel" src="./images/hebergements/3_medium/{{ card.img.src }}" sizes="100vw" srcset="
+                                ./images/hebergements/4_small/{{ card.img.src }} {{ card.img.size.small }},
+                                ./images/hebergements/3_medium/{{ card.img.src }} {{ card.img.size.medium }}">
+  <div class="card-content">
+    <h4>{{ card.title }}</h4>
+    <p>{{ card.subtitle}}
+      <strong>{{ card.price }}€</strong>
+    </p>
+    <div class="card-review">
+      {% for i in [1,2,3,4,5]%}
+        <i class="fa-solid fa-star on"></i>
+      {% endfor %}
+    </div>
+  </div>
+</a>
