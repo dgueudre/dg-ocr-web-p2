@@ -78,10 +78,10 @@
             <h2>Activités à Marseille</h2>
             <div>
                 {% for card in activities %}
-                    {% if y !== loop.index -1 %}
+                    {% if y !== loop.index - 1 %}
                         <div>
                             {% include 'card.njk' %}
-                            {% if card.img.height < 300 %}
+                            {% if loop.index % 3 === 2 %}
                                 {% set y = loop.index %}
                                 {% set card = activities[y] %}
                                 {% include 'card.njk' %}

@@ -9,7 +9,7 @@
         <strong>{{ card.price }}€</strong>
       </p>
       <div class="card-review">
-        {% for i in range(1, 5) %}
+        {% for i in range(1, 6) %}
           <i class="fa-solid fa-star {{ 'on' if card.rating >= i else 'off' }}"></i>
         {% endfor %}
       </div>
