@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Auberge la cannebière",
+        "subtitle": "Nuit à partir de",
+        "price": 25,
+        "rating": 4,
+        "img": {
+            "src": "marcus-loke-WQJvWU_HZFo-unsplash.jpg",
+            "dir": "hebergements",
+            "alt": "hotel",
+            "size": {
+                "small": "750w",
+                "medium": "1499w"
+            }
+        }
+    },
+    {
+        "title": "Hotel du port",
+        "subtitle": "Nuit à partir de ",
+        "price": 52,
+        "rating": 5,
+        "img": {
+            "src": "fred-kleber-gTbaxaVLvsg-unsplash.jpg",
+            "dir": "hebergements",
+            "alt": "hotel",
+            "size": {
+                "small": "684w",
+                "medium": "1368w"
+            }
+        }
+    },
+    {
+        "title": "Hotel Les mouettes",
+        "subtitle": "Nuit à partir de",
+        "price": 76,
+        "rating": 4,
+        "img": {
+            "src": "reisetopia-B8WIgxA_PFU-unsplash.jpg",
+            "dir": "hebergements",
+            "alt": "hotel",
+            "size": {
+                "small": "750w",
+                "medium": "1500w"
+            }
+        }
+    },
+    {
+        "title": "Hotel de la mer",
+        "subtitle": "Nuit à partir de",
+        "price": 46,
+        "rating": 3,
+        "img": {
+            "src": "annie-spratt-Eg1qcIitAuA-unsplash.jpg",
+            "dir": "hebergements",
+            "alt": "hotel",
+            "size": {
+                "small": "500w",
+                "medium": "1000w"
+            }
+        }
+    },
+    {
+        "title": "Auberge le panier",
+        "subtitle": "Nuit à partir de",
+        "price": 23,
+        "rating": 4,
+        "img": {
+            "src": "nicate-lee-kT-ZyaiwBe0-unsplash.jpg",
+            "dir": "hebergements",
+            "alt": "hotel",
+            "size": {
+                "small": "652w",
+                "medium": "1303w"
+            }
+        }
+    },
+    {
+        "title": "Hotel chez Amina",
+        "subtitle": "Nuit à partir de",
+        "price": 96,
+        "rating": 5,
+        "img": {
+            "src": "febrian-zakaria-M6S1WvfW68A-unsplash.jpg",
+            "dir": "hebergements",
+            "alt": "hotel",
+            "size": {
+                "small": "486w",
+                "medium": "972w"
+            }
+        }
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "icon": "fa-money-bill-wave",
+        "label": "Économique"
+    },
+    {
+        "icon": "fa-child-reaching",
+        "label": "Familial"
+    },
+    {
+        "icon": "fa-heart",
+        "label": "Romantique"
+    },
+    {
+        "icon": "fa-dog",
+        "label": "Animaux autorisés"
+    }
+]
