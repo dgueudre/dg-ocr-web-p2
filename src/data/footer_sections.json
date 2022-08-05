@@ -1,0 +1,14 @@
+[
+    {
+        "code": "about",
+        "label": "A propos"
+    },
+    {
+        "code": "our-lodgings",
+        "label": "Nos hébergements"
+    },
+    {
+        "code": "support",
+        "label": "Assistance"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "section": "nav",
+        "label": "Hébergements",
+        "link": "#section-lodging"
+    },
+    {
+        "section": "nav",
+        "label": "Activités",
+        "link": "#section-activity"
+    },
+    {
+        "section": "about",
+        "label": "Fonctionnement du site",
+        "link": "#"
+    },
+    {
+        "section": "about",
+        "label": "Conditions générales de vente",
+        "link": "#"
+    },
+    {
+        "section": "about",
+        "label": "Données et confidentialité",
+        "link": "#"
+    },
+    {
+        "section": "our-lodgings",
+        "label": "Charte qualité",
+        "link": "#"
+    },
+    {
+        "section": "our-lodgings",
+        "label": "Soumettre votre hotel",
+        "link": "#"
+    },
+    {
+        "section": "support",
+        "label": "Centre d'aide",
+        "link": "#"
+    },
+    {
+        "section": "support",
+        "label": "Nous contacter",
+        "link": "#"
+    }
+]

@@ -2,12 +2,12 @@ footer {
     background-color: var(--color-grey);
 }
 
-footer .container {
+footer .container>ul {
     display: flex;
     flex-direction: row;
 }
 
-footer .container>div {
+footer .container>ul>li {
     width: 33%;
 }
 
@@ -17,7 +17,7 @@ footer .container>div {
         padding: 30px;
     }
 
-    footer .container>div {
+    footer .container>ul {
         width: 100%;
     }
 }

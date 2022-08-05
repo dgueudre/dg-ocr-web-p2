@@ -5,14 +5,11 @@
         <nav class="header-nav-section">
             <a href="#"><img src="./images/logo/Booki.png" alt="logo"/></a>
             <ul>
-                <li>
-                    <a href="#section-lodging">Hébergements
-                    </a>
-                </li>
-                <li>
-                    <a href="#section-activity">Activités
-                    </a>
-                </li>
+                {% for link in links | filter_by_section('nav') %}
+                    <li>
+                        <a href="{{ link.link }}">{{ link.label }}</a>
+                    </li>
+                {% endfor %}
             </ul>
         </nav>
 
@@ -95,48 +92,20 @@
 
     <footer>
         <div class="container">
-            <div>
-                <ul>
+            <ul>
+                {% for section in footer_sections %}
                     <li>
-                        <h3>A propos</h3>
+                        <h3>{{ section.label }}</h3>
+                        <ul>
+                            {% for link in links | filter_by_section(section.code) %}
+                                <li>
+                                    <a href="{{ link.link }}">{{ link.label }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
                     </li>
-                    <li>
-                        <a href="#">Fonctionnement du site</a>
-                    </li>
-                    <li>
-                        <a href="#">Conditions générales de vente</a>
-                    </li>
-                    <li>
-                        <a href="#">Données et confidentialité</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h3>Nos hébergements</h3>
-                    </li>
-                    <li>
-                        <a href="#">Charte qualité</a>
-                    </li>
-                    <li>
-                        <a href="#">Soumettre votre hotel</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <h3>Assistance</h3>
-                    </li>
-                    <li>
-                        <a href="#">Centre d'aide</a>
-                    </li>
-                    <li>
-                        <a href="#">Nous contacter</a>
-                    </li>
-                </ul>
-            </div>
+                {% endfor %}
+            </ul>
         </div>
     </footer>
 {% endblock %}
