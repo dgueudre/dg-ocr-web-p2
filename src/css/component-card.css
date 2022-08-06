@@ -51,6 +51,7 @@
 }
 
 .card.card-big>img {
+    height: var(--img-height);
     width: 280px;
 }
 
@@ -61,5 +62,9 @@
     .card.card-big,
     .card.card-big>img {
         width: 100%;
+    }
+
+    .card.card-big>img {
+        height: 150px;
     }
 }

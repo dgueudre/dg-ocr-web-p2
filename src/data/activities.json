@@ -6,7 +6,7 @@
             "src": "reno-laithienne-QUgJhdY5Fyk-unsplash.jpg",
             "dir": "activites",
             "alt": "activity",
-            "style": "height: 350px;",
+            "height": 350,
             "size": {
                 "small": "702w",
                 "medium": "1404w"
@@ -20,7 +20,7 @@
             "src": "paul-hermann-QFTrLdQIRhI-unsplash.jpg",
             "dir": "activites",
             "alt": "activity",
-            "style": "height: 160px;",
+            "height": 160,
             "size": {
                 "small": "356w",
                 "medium": "711w"
@@ -34,7 +34,7 @@
             "src": "kevin-hikari-rV_Qd1l-VXg-unsplash.jpg",
             "dir": "activites",
             "alt": "activity",
-            "style": "height: 100px;",
+            "height": 100,
             "size": {
                 "small": "606w",
                 "medium": "1296w"
@@ -48,7 +48,7 @@
             "src": "kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg",
             "dir": "activites",
             "alt": "activity",
-            "style": "height: 350px;",
+            "height": 350,
             "size": {
                 "small": "606w",
                 "medium": "1212w"
@@ -62,7 +62,7 @@
             "src": "florian-wehde-xW9e8gdotxI-unsplash.jpg",
             "dir": "activites",
             "alt": "activity",
-            "style": "height: 120px;",
+            "height": 120,
             "size": {
                 "small": "589w",
                 "medium": "1178w"
@@ -76,7 +76,7 @@
             "src": "lena-paulin-wH2-EJoDcV0-unsplash.jpg",
             "dir": "activites",
             "alt": "activity",
-            "style": "height: 140px;",
+            "height": 140,
             "size": {
                 "small": "504w",
                 "medium": "1008w"
