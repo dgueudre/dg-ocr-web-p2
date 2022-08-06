@@ -1,0 +1,53 @@
+.filter-item h4 {
+    margin: 0;
+}
+
+.filter-item-section li {
+    display: flex;
+    margin: 5px;
+}
+
+.filter-item i,
+.filter-item span,
+.filter-item h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-item i,
+.filter-item span {
+    border-radius: var(--icon-size);
+}
+
+.filter-item span {
+    z-index: -1;
+    border: 2px solid var(--color-grey);
+    background-color: var(--span-bg-color);
+    color: var(--span-txt-color);
+}
+
+.filter-item i {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    background-color: var(--color-light-blue);
+    margin-right: calc(0px - var(--icon-size));
+}
+
+.filter-item span {
+    padding: 0 var(--text-padding);
+    padding-left: calc(var(--text-padding) + var(--icon-size));
+}
+
+.filter-item i {
+    color: var(--color-blue);
+}
+
+.filter-item {
+    display: flex;
+}
+
+.filter-item:hover {
+    --span-bg-color: var(--color-blue);
+    --span-txt-color: var(--color-white);
+}

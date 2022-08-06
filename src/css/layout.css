@@ -1,3 +1,7 @@
+.header-search-section {
+    margin: var(--spacing-container);
+}
+
 #section-lodging {
     display: flex;
 }
