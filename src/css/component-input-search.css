@@ -42,6 +42,11 @@
   display: none;
 }
 
+.input-search > i,
+.input-search a > i {
+  padding: 0 30px;
+}
+
 @media screen and (max-width: 768px) {
   .input-search a > span {
     display: none;
