@@ -1,7 +1,18 @@
+/* nav-home */
+.nav-home {
+  display: flex;
+  align-items: center;
+}
+
+.nav-home > img {
+  height: 60px;
+}
+
+/* nav-link */
 .nav-link {
   display: block;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
   color: var(--color-black);
   border-top: 3px solid var(--color-grey);
 }
