@@ -29,6 +29,10 @@ a {
   color: inherit;
 }
 
+input {
+  font-size: inherit;
+}
+
 /* vars */
 :root {
   --color-white: white;
@@ -52,6 +56,11 @@ h4 {
   font-weight: 500;
 }
 
+h2,
+p {
+  margin: 8px 0;
+}
+
 /* stars */
 .fa-star.on {
   color: var(--color-blue);
@@ -65,4 +74,4 @@ h4 {
   body {
     font-size: 1.2em;
   }
-}   
+}

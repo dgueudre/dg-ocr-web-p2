@@ -3,7 +3,7 @@ header,
 main,
 footer {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
   max-width: 1200px;
 }
 
@@ -37,7 +37,12 @@ nav ul {
   }
 }
 
-/*  */
+/* section-top layout */
+@media screen and (max-width: 768px) {
+  .section-top {
+    padding: 30px;
+  }
+}
 
 .header-search-section {
   margin: var(--spacing-container);

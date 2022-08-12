@@ -1,21 +1,8 @@
 .header-info-section {
     display: flex;
     align-items: center;
-    padding: var(--spacing-container);
 }
 
 .header-info-section i {
     font-size: small;
-    color: var(--color-blue)
-}
-
-.header-info-section i {
-    --icon-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--icon-size);
-    height: var(--icon-size);
-    border-radius: var(--icon-size);
-    border: 1px solid var(--color-grey);
 }

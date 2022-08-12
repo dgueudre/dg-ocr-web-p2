@@ -1,59 +1,59 @@
-.component-input-search {
-    --radius: 15px;
-    --icon-size: 50px;
-    --max-mobile-width: 480px;
-    display: flex;
-    height: 50px;
+.input-search {
+  --radius: 15px;
+  --icon-size: 50px;
+  --max-mobile-width: 480px;
+  display: flex;
+  height: 50px;
+  margin: 20px 0 30px 0;
 }
 
-.component-input-search i,
-.component-input-search a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.input-search i,
+.input-search a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.component-input-search>i {
-    width: var(--icon-size);
-    background-color: var(--color-grey);
-    border-radius: var(--radius) 0 0 var(--radius);
+.input-search > i {
+  width: var(--icon-size);
+  background-color: var(--color-grey);
+  border-radius: var(--radius) 0 0 var(--radius);
 }
 
-.component-input-search a {
-    background-color: var(--color-blue);
-    padding: 10px;
-    border-radius: 0 var(--radius) var(--radius) 0;
-    color: var(--color-white);
+.input-search a {
+  background-color: var(--color-blue);
+  padding: 10px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--color-white);
 }
 
-.component-input-search input {
-    padding-left: 10px;
-    font-weight: bold;
-    border: 1px solid var(--color-grey);
+.input-search input {
+  padding-left: 10px;
+  border: 1px solid var(--color-grey);
 }
 
-.component-input-search input,
-.component-input-search input::placeholder {
-    color: var(--color-black);
+.input-search input,
+.input-search input::placeholder {
+  color: var(--color-black);
 }
 
-.component-input-search a>i {
-    display: none;
+.input-search a > i {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .component-input-search a>span {
-        display: none;
-    }
+  .input-search a > span {
+    display: none;
+  }
 
-    .component-input-search a>i {
-        display: unset;
-    }
+  .input-search a > i {
+    display: unset;
+  }
 
-    .component-input-search a {
-        border-radius: var(--radius);
-        width: var(--icon-size);
-        padding: 0px;
-        margin-left: calc(0px - var(--icon-size) / 2);
-    }
+  .input-search a {
+    border-radius: var(--radius);
+    width: var(--icon-size);
+    padding: 0px;
+    margin-left: calc(0px - var(--icon-size) / 2);
+  }
 }

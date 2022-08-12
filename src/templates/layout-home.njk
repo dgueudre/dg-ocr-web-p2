@@ -14,97 +14,97 @@
     </header>
 
     <main>
-        <div class="header-title-section">
+        <section class="section-top">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre-ville ou en pleine nature</p>
-        </div>
+            <strong>
+                <form class="input-search" method="post" action="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="search" name="rechercher" placeholder="Marseille, France">
+                    <a href="#">
+                        <span>
+                            <strong>Rechercher</strong>
+                        </span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </form>
 
-        <form class="header-search-section" method="post" action="#">
-            <div class="component-input-search">
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="search" name="rechercher" placeholder="Marseille, France">
-                <a href="#">
-                    <span>Rechercher</span>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-            </div>
-        </form>
-
-        <div class="header-filter-section">
-            <h3>Filtres</h3>
-            <ul>
-                {% for filter_item in filters %}
-                    <li>
-                        {% include 'filter.njk' %}
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-
-        <div class="header-info-section">
-            <i class="fa-solid fa-info"></i>
-            <span>Plus de 500 logements sont disponibles dans cette ville</span>
-        </div>
-
-        <section id="section-lodging">
-            <div class="section-lodging-search-result">
-                <h2>Hébergements à Marseille</h2>
-                <div>
-                    {% for card in lodging_search_result %}
-                        {% include 'card.njk' %}
-                    {% endfor %}
+                <div class="header-filter-section">
+                    <h3>Filtres</h3>
+                    <ul>
+                        {% for filter_item in filters %}
+                            <li>
+                                {% include 'filter.njk' %}
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
-                <a href="#">Afficher plus</a>
-            </div>
 
-            <div class="section-lodging-most-popular">
-                <div class="section-title">
-                    <h2>Les plus populaires</h2>
-                    <i class="fa-solid fa-star"></i>
+                <div class="header-info-section">
+                    <i class="fa-solid fa-info icon-round small"></i>
+                    <span>Plus de 500 logements sont disponibles dans cette ville</span>
                 </div>
-                <div>
-                    {% for card in lodging_most_popular %}
-                        {% include 'card.njk' %}
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="section-activity">
-            <h2>Activités à Marseille</h2>
-            <div>
-                {% for card in activities %}
-                    {% if y !== loop.index - 1 %}
-                        <div>
+            <section id="section-lodging">
+                <div class="section-lodging-search-result">
+                    <h2>Hébergements à Marseille</h2>
+                    <div>
+                        {% for card in lodging_search_result %}
                             {% include 'card.njk' %}
-                            {% if loop.index % 3 === 2 %}
-                                {% set y = loop.index %}
-                                {% set card = activities[y] %}
-                                {% include 'card.njk' %}
-                            {% endif %}
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </section>
-    </main>
+                        {% endfor %}
+                    </div>
+                    <a href="#">Afficher plus</a>
+                </div>
 
-    <footer>
-        <div class="container">
-            <ul>
-                {% for section in footer_sections %}
-                    <li>
-                        <h3>{{ section.label }}</h3>
-                        <ul>
-                            {% for link in links | filter_by('section', section.code) %}
-                                <li>
-                                    <a href="{{ link.link }}">{{ link.label }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-    </footer>
-{% endblock %}
+                <div class="section-lodging-most-popular">
+                    <div class="section-title">
+                        <h2>Les plus populaires</h2>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div>
+                        {% for card in lodging_most_popular %}
+                            {% include 'card.njk' %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-activity">
+                <h2>Activités à Marseille</h2>
+                <div>
+                    {% for card in activities %}
+                        {% if y !== loop.index - 1 %}
+                            <div>
+                                {% include 'card.njk' %}
+                                {% if loop.index % 3 === 2 %}
+                                    {% set y = loop.index %}
+                                    {% set card = activities[y] %}
+                                    {% include 'card.njk' %}
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <ul>
+                    {% for section in footer_sections %}
+                        <li>
+                            <h3>{{ section.label }}</h3>
+                            <ul>
+                                {% for link in links | filter_by('section', section.code) %}
+                                    <li>
+                                        <a href="{{ link.link }}">{{ link.label }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </footer>
+    {% endblock %}
