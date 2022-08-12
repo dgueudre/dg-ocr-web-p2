@@ -28,6 +28,7 @@
 }
 
 .input-search input {
+  width: 300px;
   padding-left: 10px;
   border: 1px solid var(--color-grey);
 }
@@ -55,5 +56,9 @@
     width: var(--icon-size);
     padding: 0px;
     margin-left: calc(0px - var(--icon-size) / 2);
+  }
+
+  .input-search input {
+    width: 100%;
   }
 }
