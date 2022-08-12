@@ -1,4 +1,4 @@
-/* main layout */
+/* header, main, footer layout */
 header,
 main,
 footer {
@@ -16,7 +16,7 @@ footer {
   }
 }
 
-/*  header>nav layout */
+/*  header > nav */
 nav {
   display: flex;
   justify-content: space-between;
@@ -37,14 +37,17 @@ nav ul {
   }
 }
 
-/* section-top layout */
+/* .section-top */
+.section-top {
+  padding-bottom: 30px;
+}
 @media screen and (max-width: 768px) {
   .section-top {
     padding: 30px;
   }
 }
 
-/* section-top>filters */
+/* .section-top > .filters */
 .section-top > .filters,
 .section-top > .filters ul {
   display: flex;
@@ -55,6 +58,21 @@ nav ul {
 .section-top > .filters ul {
   row-gap: 10px;
 }
+
+/* .section-top > .info */
+.section-top > .info {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 30px;
+}
+.section-top > .info span {
+  max-width: 80%;
+}
+.section-top > .info i {
+  align-self: start;
+}
+
 /* */
 
 #section-lodging {

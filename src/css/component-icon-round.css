@@ -3,16 +3,16 @@ i.icon-round {
   align-items: center;
   justify-content: center;
   width: var(--icon-size);
-  height: var(--icon-size);
+  height: var(--icon-size) !important;
   border-radius: var(--icon-size);
   border: 1px solid var(--color-grey);
   color: var(--color-blue);
 }
 
 i.icon-round.small {
-    --icon-size: 30px;
+  --icon-size: 30px;
 }
 
 i.icon-round.medium {
-    --icon-size: 50px;
+  --icon-size: 50px;
 }
