@@ -1,71 +1,111 @@
+/* main layout */
+header,
+main,
+footer {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  main,
+  footer {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*  nav layout */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav li {
+    width: 50%;
+  }
+}
+
+/*  */
+
 .header-search-section {
-    margin: var(--spacing-container);
+  margin: var(--spacing-container);
 }
 
 #section-lodging {
-    display: flex;
+  display: flex;
 }
 
 .section-lodging-search-result,
 .section-lodging-most-popular {
-    padding: 30px;
+  padding: 30px;
 }
-
 
 .section-lodging-search-result {
-    background-color: var(--color-grey);
-    border-radius: 30px;
+  background-color: var(--color-grey);
+  border-radius: 30px;
 }
 
-.section-lodging-search-result>div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.section-lodging-search-result > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .section-lodging-most-popular {
-    background-color: var(--color-grey);
-    width: 380px;
-    min-width: 380px;
-    border-radius: 30px;
-    margin-left: 20px;
+  background-color: var(--color-grey);
+  width: 380px;
+  min-width: 380px;
+  border-radius: 30px;
+  margin-left: 20px;
 }
 
 .section-lodging-most-popular .section-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#section-activity>div {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
+#section-activity > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 768px) {
-    #section-lodging {
-        flex-direction: column-reverse;
-    }
+  #section-lodging {
+    flex-direction: column-reverse;
+  }
 
-    .section-lodging-search-result {
-        background-color: var(--color-white);
-        border-radius: 0px;
-    }
+  .section-lodging-search-result {
+    background-color: var(--color-white);
+    border-radius: 0px;
+  }
 
-    .section-lodging-most-popular {
-        background-color: var(--color-grey);
-        width: 100%;
-        border-radius: 0px;
-        margin-left: 0px;
-    }
+  .section-lodging-most-popular {
+    background-color: var(--color-grey);
+    width: 100%;
+    border-radius: 0px;
+    margin-left: 0px;
+  }
 
-    #section-activity {
-        padding: 30px;
-    }
+  #section-activity {
+    padding: 30px;
+  }
 
-    #section-activity>div>div {
-        width: 100%;
-    }
+  #section-activity > div > div {
+    width: 100%;
+  }
 }

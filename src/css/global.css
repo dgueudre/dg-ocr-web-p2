@@ -9,40 +9,9 @@ html {
   box-sizing: inherit;
 }
 
-/* vars */
-:root {
-  --color-white: white;
-  --color-black: black;
-  --color-blue: #0065fc;
-  --color-light-blue: #deebff;
-  --color-grey: #f2f2f2;
-  --spacing-container: 0;
-}
-
-/* common */
-body {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-}
-
-strong,
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 500;
-}
-
 body {
   margin: 0;
   padding: 0;
-}
-
-header,
-main,
-footer .container {
-  margin: 0 auto;
-  max-width: 1200px;
 }
 
 ul,
@@ -60,6 +29,30 @@ a {
   color: inherit;
 }
 
+/* vars */
+:root {
+  --color-white: white;
+  --color-black: black;
+  --color-blue: #0065fc;
+  --color-light-blue: #deebff;
+  --color-grey: #f2f2f2;
+}
+
+/* font */
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+strong,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+/* stars */
 .fa-star.on {
   color: var(--color-blue);
 }
@@ -69,9 +62,6 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  :root {
-    --spacing-container: 30px;
-  }
   body {
     font-size: 1.2em;
   }

@@ -1,3 +1,10 @@
+.filter-item {
+    --icon-size: 50px;
+    --text-padding: 10px;
+    --span-bg-color: transparent;
+    --span-txt-color: inherit;
+}
+
 .filter-item h4 {
     margin: 0;
 }

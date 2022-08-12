@@ -3,7 +3,7 @@ module.exports = config => {
   config.addPassthroughCopy('src/css');
 
 
-  config.addNunjucksFilter("filter_by_section", (links, section) => links.filter(link => link.section === section));
+  config.addNunjucksFilter("filter_by", (links, propertyName, value) => links.filter(link => link[propertyName] === value));
 
   return {
     markdownTemplateEngine: 'njk',

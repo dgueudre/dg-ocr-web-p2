@@ -1,10 +1,4 @@
-.header-filter-section {
-    --icon-size: 50px;
-    --text-padding: 10px;
-    --span-bg-color: transparent;
-    --span-txt-color: inherit;
-    padding: 0 var(--spacing-container);
-}
+
 
 .header-filter-section,
 .header-filter-section ul {
