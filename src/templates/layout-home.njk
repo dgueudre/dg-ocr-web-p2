@@ -7,7 +7,7 @@
             <ul>
                 {% for link in links | filter_by_section('nav') %}
                     <li>
-                        <a href="{{ link.link }}">{{ link.label }}</a>
+                        <a class="nav-link" href="{{ link.link }}">{{ link.label }}</a>
                     </li>
                 {% endfor %}
             </ul>
