@@ -1,10 +1,9 @@
 .input-search {
   --radius: 15px;
   --icon-size: 50px;
-  --max-mobile-width: 480px;
   display: flex;
-  height: 50px;
-  margin: 20px 0 30px 0;
+  height: var(--icon-size);
+  margin: 30px 0;
 }
 
 .input-search i,
@@ -28,7 +27,7 @@
 }
 
 .input-search input {
-  width: 300px;
+  width: 250px;
   padding-left: 10px;
   border: 1px solid var(--color-grey);
 }
@@ -43,8 +42,9 @@
 }
 
 .input-search > i,
-.input-search a > i {
-  padding: 0 30px;
+.input-search a > i,
+.input-search a > span {
+  padding: 0 calc(var(--icon-size) / 2);
 }
 
 @media screen and (max-width: 768px) {
