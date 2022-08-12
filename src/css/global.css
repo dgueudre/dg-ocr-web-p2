@@ -1,66 +1,75 @@
 /* reset */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* vars */
 :root {
-    --color-white: white;
-    --color-black: black;
-    --color-blue: #0065FC;
-    --color-light-blue: #DEEBFF;
-    --color-grey: #F2F2F2;
-    --spacing-container: 0;
+  --color-white: white;
+  --color-black: black;
+  --color-blue: #0065fc;
+  --color-light-blue: #deebff;
+  --color-grey: #f2f2f2;
+  --spacing-container: 0;
 }
 
 /* common */
-html {
-    font-family: 'Raleway', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+strong,
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header,
 main,
 footer .container {
-    margin: 0 auto;
-    max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 ul,
 li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .fa-star.on {
-    color: var(--color-blue);
+  color: var(--color-blue);
 }
 
 .fa-star.off {
-    color: var(--color-grey);
+  color: var(--color-grey);
 }
 
 @media screen and (max-width: 768px) {
-    :root {
-        --spacing-container: 30px;
-    }
+  :root {
+    --spacing-container: 30px;
+  }
 }
