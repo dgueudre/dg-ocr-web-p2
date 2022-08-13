@@ -45,15 +45,6 @@ input {
 /* font */
 body {
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
-}
-
-strong,
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 500;
 }
 
 h2,
@@ -72,6 +63,6 @@ p {
 
 @media screen and (max-width: 768px) {
   body {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
