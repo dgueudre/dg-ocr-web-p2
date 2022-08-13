@@ -74,7 +74,7 @@ nav ul {
   gap: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   #section-lodging {
     flex-direction: column-reverse;
   }
@@ -94,13 +94,15 @@ nav ul {
   width: 380px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 
   .section-lodging.search-result,
   .section-lodging.most-popular {
     width: 100%;
   }
+}
 
+@media screen and (max-width: 768px) {
   .section-lodging {
     border-radius: 0px;
   }
@@ -131,12 +133,14 @@ nav ul {
 }
 
 @media screen and (max-width: 992px) {
-  .section-lodging.search-result .card {
-    width: 45%;
+  .section-lodging.most-popular .card {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
+
+  .section-lodging.most-popular .card,
   .section-lodging.search-result .card {
     width: 100%;
   }
