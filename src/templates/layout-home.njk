@@ -47,9 +47,11 @@
         </section>
 
         <section id="section-lodging">
-            <div class="section-lodging-search-result">
-                <h2>Hébergements à Marseille</h2>
-                <div>
+            <div class="section-lodging search-result">
+                <div class="section-title">
+                    <h2>Hébergements à Marseille</h2>
+                </div>
+                <div class="section-content">
                     {% for card in lodging_search_result %}
                         {% include 'card.njk' %}
                     {% endfor %}
@@ -57,12 +59,12 @@
                 <a href="#">Afficher plus</a>
             </div>
 
-            <div class="section-lodging-most-popular">
+            <div class="section-lodging most-popular">
                 <div class="section-title">
                     <h2>Les plus populaires</h2>
                     <i class="fa-solid fa-star"></i>
                 </div>
-                <div>
+                <div class="section-content">
                     {% for card in lodging_most_popular %}
                         {% include 'card.njk' %}
                     {% endfor %}

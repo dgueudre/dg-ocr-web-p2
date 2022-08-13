@@ -1,17 +1,12 @@
 /* header, main, footer layout */
-header,
-main,
-footer {
+body {
   margin: 0 auto;
   padding: 0 30px;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 
 @media screen and (max-width: 768px) {
-
-  header,
-  main,
-  footer {
+  body {
     margin: 0;
     padding: 0;
   }
@@ -73,42 +68,81 @@ nav ul {
   align-self: start;
 }
 
-/* */
-
+/* section-lodging */
 #section-lodging {
   display: flex;
+  gap: 20px;
 }
 
-.section-lodging-search-result,
-.section-lodging-most-popular {
+@media screen and (max-width: 768px) {
+  #section-lodging {
+    flex-direction: column-reverse;
+  }
+}
+
+.section-lodging {
   padding: 30px;
-}
-
-.section-lodging-search-result {
   background-color: var(--color-grey);
   border-radius: 30px;
 }
 
-.section-lodging-search-result>div {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.section-lodging.search-result {
+  width: calc(100% - 400px);
 }
 
-.section-lodging-most-popular {
-  background-color: var(--color-grey);
+.section-lodging.most-popular {
   width: 380px;
-  min-width: 380px;
-  border-radius: 30px;
-  margin-left: 20px;
 }
 
-.section-lodging-most-popular .section-title {
+@media screen and (max-width: 768px) {
+
+  .section-lodging.search-result,
+  .section-lodging.most-popular {
+    width: 100%;
+  }
+
+  .section-lodging {
+    border-radius: 0px;
+  }
+
+  .section-lodging.search-result {
+    background-color: var(--color-white);
+  }
+}
+
+.section-lodging.search-result .section-content,
+.section-lodging.most-popular .section-content {
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 5%;
+  row-gap: 30px;
+}
+
+.section-lodging.search-result .card {
+  width: 30%;
+}
+
+.section-lodging.most-popular .section-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+@media screen and (max-width: 992px) {
+  .section-lodging.search-result .card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-lodging.search-result .card {
+    width: 100%;
+  }
+}
+
+/* section-activity */
 #section-activity>div {
   display: flex;
   justify-content: space-between;
@@ -117,18 +151,14 @@ nav ul {
 }
 
 @media screen and (max-width: 768px) {
-  #section-lodging {
-    flex-direction: column-reverse;
-  }
 
-  .section-lodging-search-result {
+  .section-lodging.search-result {
     background-color: var(--color-white);
     border-radius: 0px;
   }
 
-  .section-lodging-most-popular {
+  .section-lodging.most-popular {
     background-color: var(--color-grey);
-    width: 100%;
     border-radius: 0px;
     margin-left: 0px;
   }
