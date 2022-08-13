@@ -4,7 +4,7 @@ i.icon-round {
   justify-content: center;
   min-width: var(--icon-size);
   width: var(--icon-size);
-  height: var(--icon-size) !important;
+  height: var(--icon-size);
   border-radius: var(--icon-size);
   border: 1px solid var(--color-grey);
   color: var(--color-blue);
