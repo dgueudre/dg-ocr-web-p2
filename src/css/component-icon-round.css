@@ -2,6 +2,7 @@ i.icon-round {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: var(--icon-size);
   width: var(--icon-size);
   height: var(--icon-size) !important;
   border-radius: var(--icon-size);
