@@ -2,13 +2,17 @@
   --icon-size: 50px;
   --text-padding: 10px;
   --span-bg-color: transparent;
+  --span-border-color: var(--color-dark-grey);
   --span-txt-color: inherit;
+  --i-rotate: inherit;
   display: flex;
 }
 
 .filter-item:hover {
-  --span-bg-color: var(--color-blue);
-  --span-txt-color: var(--color-white);
+  --span-bg-color: var(--color-light-blue);
+  --span-border-color: var(--color-light-blue);
+  --span-txt-color: inherit;
+  --i-rotate: -30deg;
 }
 
 .filter-item h4 {
@@ -34,14 +38,16 @@
 
 .filter-item span {
   z-index: -1;
-  border: 2px solid var(--color-grey);
+  border: 2px solid var(--span-border-color);
   background-color: var(--span-bg-color);
   color: var(--span-txt-color);
 }
 
 .filter-item i {
   background-color: var(--color-light-blue);
+  border: 2px solid var(--color-light-blue);
   margin-right: calc(0px - var(--icon-size));
+  rotate: var(--i-rotate);
 }
 
 .filter-item span {
