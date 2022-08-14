@@ -1,12 +1,17 @@
 /* header, main, footer layout */
-body {
+header,
+main,
+footer>.container {
   margin: 0 auto;
   padding: 0 30px;
   max-width: 1600px;
 }
 
 @media screen and (max-width: 768px) {
-  body {
+
+  header,
+  main,
+  footer>.container {
     margin: 0;
     padding: 0;
   }
@@ -192,6 +197,40 @@ nav ul {
   }
 
   #section-activity .section-content>div {
+    width: 100%;
+  }
+}
+
+/* footer */
+footer {
+  background-color: var(--color-grey);
+  padding: 30px 0;
+}
+
+footer>.container>ul {
+  display: flex;
+  flex-direction: row;
+  row-gap: 30px;
+}
+
+footer>.container>ul>li {
+  width: 33%;
+}
+
+footer>.container>ul>li>ul>li {
+  margin-top: 5px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  footer>.container>ul {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  footer>.container>ul,
+  footer>.container>ul>li {
     width: 100%;
   }
 }
