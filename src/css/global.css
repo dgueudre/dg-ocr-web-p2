@@ -63,7 +63,7 @@ a:hover {
 }
 
 .fa-star.off {
-  color: var(--color-grey);
+  color: var(--color-dark-grey);
 }
 
 @media screen and (max-width: 768px) {
