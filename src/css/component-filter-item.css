@@ -4,7 +4,7 @@
   --span-bg-color: transparent;
   --span-border-color: var(--color-dark-grey);
   --span-txt-color: inherit;
-  --i-rotate: inherit;
+  --i-rotate: 0deg;
   display: flex;
 }
 
