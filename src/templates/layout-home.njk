@@ -56,7 +56,9 @@
                         {% include 'card.njk' %}
                     {% endfor %}
                 </div>
-                <a href="#">Afficher plus</a>
+                <a href="#">
+                    <h4>Afficher plus</h4>
+                </a>
             </div>
 
             <div class="section-lodging most-popular">
@@ -74,7 +76,7 @@
 
         <section id="section-activity">
             <h2>Activités à Marseille</h2>
-            <div>
+            <div class="section-content">
                 {% for activity_block in activities %}
                     <div>
                         {% for card in activity_block %}

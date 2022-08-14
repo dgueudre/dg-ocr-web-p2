@@ -53,6 +53,10 @@ p {
   margin: 8px 0;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 /* stars */
 .fa-star.on {
   color: var(--color-blue);

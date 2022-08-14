@@ -111,9 +111,12 @@ nav ul {
   }
 }
 
+.section-content {
+  padding: 15px 0;
+}
+
 .section-lodging.search-result .section-content,
 .section-lodging.most-popular .section-content {
-  padding-top: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
