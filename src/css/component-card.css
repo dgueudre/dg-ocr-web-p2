@@ -1,6 +1,6 @@
 .card {
     --radius: 15px;
-    margin: 0 0 40px 0;
+    /* margin: 0 0 40px 0; */
     display: flex;
     flex-direction: column;
     border-radius: var(--radius);
@@ -22,7 +22,7 @@
 .card>img {
     object-fit: cover;
     height: 100px;
-    width: 210px;
+    /* width: 210px; */
     border-radius: var(--radius) var(--radius) 0 0;
 }
 
@@ -52,7 +52,6 @@
 
 .card.card-big>img {
     height: var(--img-height);
-    width: 280px;
 }
 
 @media screen and (max-width: 768px) {

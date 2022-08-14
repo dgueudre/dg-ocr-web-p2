@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.input-search > i {
+.input-search>i {
   width: var(--icon-size);
   background-color: var(--color-grey);
   border-radius: var(--radius) 0 0 var(--radius);
@@ -37,22 +37,22 @@
   color: var(--color-black);
 }
 
-.input-search a > i {
+.input-search a>i {
   display: none;
 }
 
-.input-search > i,
-.input-search a > i,
-.input-search a > span {
+.input-search>i,
+.input-search a>i,
+.input-search a>span {
   padding: 0 calc(var(--icon-size) / 2);
 }
 
 @media screen and (max-width: 768px) {
-  .input-search a > span {
+  .input-search a>span {
     display: none;
   }
 
-  .input-search a > i {
+  .input-search a>i {
     display: unset;
   }
 
