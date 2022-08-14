@@ -52,7 +52,6 @@
 
 .card.card-big>img {
     height: var(--img-height);
-    width: 280px;
 }
 
 @media screen and (max-width: 768px) {

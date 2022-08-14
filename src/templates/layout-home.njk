@@ -56,9 +56,11 @@
                         {% include 'card.njk' %}
                     {% endfor %}
                 </div>
-                <a href="#">
-                    <h4>Afficher plus</h4>
-                </a>
+                <div class="section-footer">
+                    <a href="#">
+                        <h4>Afficher plus</h4>
+                    </a>
+                </div>
             </div>
 
             <div class="section-lodging most-popular">
@@ -75,11 +77,13 @@
         </section>
 
         <section id="section-activity">
-            <h2>Activités à Marseille</h2>
+            <div class="section-title">
+                <h2>Activités à Marseille</h2>
+            </div>
             <div class="section-content">
-                {% for activity_block in activities %}
+                {% for card_group in activities %}
                     <div>
-                        {% for card in activity_block %}
+                        {% for card in card_group %}
                             {% include 'card.njk' %}
                         {% endfor %}
                     </div>
