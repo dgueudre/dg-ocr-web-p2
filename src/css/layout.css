@@ -158,17 +158,6 @@ nav ul {
 
 @media screen and (max-width: 768px) {
 
-  .section-lodging.search-result {
-    background-color: var(--color-white);
-    border-radius: 0px;
-  }
-
-  .section-lodging.most-popular {
-    background-color: var(--color-grey);
-    border-radius: 0px;
-    margin-left: 0px;
-  }
-
   #section-activity {
     padding: 30px;
   }
